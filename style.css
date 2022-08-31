@@ -1,38 +1,68 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Space between the element and the other elements */
+    padding: 0; /* Space between the content of the element and its box edge */
+    box-sizing: border-box; /* To indicate that the border is included in the width and height of the elements */
+    /* border: 3px solid white; */
+}
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* A small black shadow in the four directions */
 }
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    height: 100vh; /* ViewPort height (percentage) */
+    display: flex; /* Activates the "flex mode", an easy way to handle divs with elements inside */
+    justify-content: center; /* Centers the items inside a flex container (according to the flex-direction) */
+    flex-direction: column; /* Indicate that the elements will be shown in column */
+    align-items: center; /* Align the elements around the center */
     font-family: sans-serif;
     color: white;
+    background-image: url("images/weather-image.jpg");
+    background-size: 100% 100%; /* Width and height */
 }
 .location,
 .temperature {
-    height: 30vh;
-    width: 30%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 30px;
 }
 .temperature {
+    height: 30vh;
     flex-direction: column;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* A small black shadow in the four directions */
+}
+.location {
+    height: 20vh;
 }
 .degree-section {
     display: flex;
     align-items: center;
-    cursor: pointer;
+    flex-direction: row;
+    cursor: pointer; /* The cursor changes its type when hovering this element */
 }
-.degree-section span {
+.degree-section span { /* The C */
     margin: 10px;
-    font-size: 30px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .degree-section h2 {
     font-size: 40px;
+}
+#input-city {
+    font-size: 20px;
+}
+#btSubmit {
+    font-size: 20px;
+}
+#city-name {
+    margin-top: 10px;
+}
+#div-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 130px 40px 130px; /* Starting with top, and then clock-wise */
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143)); /* Starts with the first color, and gradually changes to the second color */
 }

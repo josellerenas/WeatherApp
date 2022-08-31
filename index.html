@@ -8,21 +8,24 @@
     <title>WeatherApp</title>
   </head>
   <body>
-    <div class="location">
-      <h1 class="location-timezone">Timezone</h1>
-    </div>
-    <div class="input">
-      <input type="text"  id="input-city" placeholder="Enter a city name">
-      <input type="submit" value="Submit" id="btSubmit">
-    </div>
-    <div class="temperature">
-      <h2 id="city-name">City</h2>
-      <div class="degree-section">
-        <h2 id="temperature-degree">34</h2>
-        <span>C</span>
+    <div id="div-main">
+      <div class="location">
+        <h1 class="location-timezone">Weather App</h1>
       </div>
-      <div id="temperature-description">It's freaking cold</div>
+      <div class="input">
+        <input type="text"  id="input-city" placeholder="Enter a city name">
+        <input type="submit" value="Submit" id="btSubmit">
+      </div>
+      <div class="temperature">
+        <h2 id="city-name">City</h2>
+        <div class="degree-section">
+          <h2 id="temperature-degree">34</h2>
+          <span>C</span>
+        </div>
+        <div id="temperature-description">Weather description</div>
+      </div>
     </div>
     <script src="app.js"></script>
+    <script src="config.js"></script>
   </body>
 </html>
